@@ -1,0 +1,67 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+$primary-color: black;
+$text-a-c:center;
+$text-a-l:left;
+$text-a-j:justify;
+$font-regular: 24px;
+@mixin page-menu {
+       ul{
+        list-style: none;
+        p.line{
+            clear: both;
+        }
+           li{ float: left;
+                
+                a.page-number{
+                    text-decoration: none;
+                    display: block;
+                    margin: 20px;
+                    color: $primary-color;
+               }
+           }
+       } 
+ }
+nav{
+    @include page-menu;
+  }
+.main-part{
+    text-align: $text-a-c;
+    .name{
+        display: block;
+        font-size: 18px;
+        margin-top: 20px;
+        padding-left: 200px;
+    }
+    .genre{
+        margin-top: 70px;
+        margin-bottom: 40px;
+        font-size: font-regular;
+    }
+    .book{
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 40px;
+        .caps{
+            text-transform: uppercase;
+        }
+    }
+    .text{
+        text-indent: 25px;
+        line-height: 1;
+        text-align: text-a-l;
+        font-size: font-regular;
+        margin: 0px 80px 0px 80px;
+        text-align: $text-a-j;
+    }
+}
+footer{
+    nav{
+        margin-top: 40px;
+        margin-bottom: 50px;
+    }
+}

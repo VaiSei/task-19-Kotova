@@ -1,0 +1,68 @@
+*, html, body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul p.line {
+  clear: both;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li a.page-number {
+  text-decoration: none;
+  display: block;
+  margin: 20px;
+  color: black;
+}
+
+.main-part {
+  text-align: center;
+}
+
+.main-part .name {
+  display: block;
+  font-size: 18px;
+  margin-top: 20px;
+  padding-left: 200px;
+}
+
+.main-part .genre {
+  margin-top: 70px;
+  margin-bottom: 40px;
+  font-size: font-regular;
+}
+
+.main-part .book {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.main-part .book .caps {
+  text-transform: uppercase;
+}
+
+.main-part .text {
+  text-indent: 25px;
+  line-height: 1;
+  text-align: text-a-l;
+  font-size: font-regular;
+  margin: 0px 80px 0px 80px;
+  text-align: justify;
+}
+
+footer nav {
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+/*# sourceMappingURL=style.css.map */
